@@ -24,7 +24,7 @@ fuentes: [conversacion-2026-10-30, Laboratorio/RCA Consultores/n8n/N8N-RCA-GUIA-
 | Correo de salida | cuenta de Potencia por SMTP (decidido); credencial por crear en n8n | pendiente P14 |
 | Flujo de registro (entrada) | no construido; depende de P3 | pendiente P7 |
 | Git | repo local inicializado, 1 commit | hecho |
-| GitHub | `gh` no instalado; sin remoto | pendiente P9 |
+| GitHub | https://github.com/potencIAEmpresarIAl/agentes-rca (público), rama main, sincronizado | hecho 30-oct; recomendación: hacerlo privado |
 | MCP a n8n | no disponible en esta sesión | siguiente sesión |
 
 ## Qué sigue (orden sugerido)

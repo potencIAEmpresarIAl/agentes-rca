@@ -22,3 +22,7 @@ fuentes: []
 - Flujo actualizado: nodo «Enviar al gerente», remitente gerencia@potenciaempresarial.site, saludo a Roger. Validador local sin errores; 2 marcadores PENDIENTE (ID del Sheet, correo de Roger).
 - Nuevos pendientes P14 (credencial SMTP en n8n), P15 (correo de Roger en el nodo), P16 (tabla definitiva). Guía de credencial en `workflows/LEEME-importacion.md` §3b.
 - Sigue sin importar ni ejecutar en n8n.
+
+## [2026-10-30] construccion | Repositorio conectado a GitHub
+- Remoto `origin` añadido (potencIAEmpresarIAl/agentes-rca), rama renombrada a `main`, 2 commits subidos. Autenticación por el llavero de macOS (osxkeychain), sin tokens en el chat.
+- `Docs/` sigue fuera del repositorio. El repo es público: recomendado pasarlo a privado por la URL del servidor n8n y los nombres del equipo.

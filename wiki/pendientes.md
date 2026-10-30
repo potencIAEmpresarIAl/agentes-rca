@@ -20,7 +20,7 @@ P1 a P5 fueron respondidas por Hanssen el 30-oct-2026 (ver [[decisiones]] D2, D3
 | P6 | Aviso individual al líder 5 días antes y resumen semanal a gerencia (acordados el 15-oct) | segundo y tercer flujo | agente, tras P2 | sin construir |
 | P7 | Flujo de registro (formulario n8n → tabla) con ID consecutivo | hoy el registro es manual | agente, tras P3 | sin construir |
 | P8 | Unicidad del ID: buscar y luego insertar en una hoja no garantiza unicidad con ejecuciones simultáneas | duplicados en la tabla y en los avisos | agente | limitación expresa; opciones: Data Tables con clave, BD de la app, o ID por marca de tiempo |
-| P9 | GitHub: `gh` no está instalado y no hay remoto. Acción mínima: crear el repositorio vacío en github.com y ejecutar `git remote add origin <url>`; o instalar `gh` y `gh auth login` | respaldo remoto de versiones | Hanssen | abierto; el repo local ya existe |
+| P9 | GitHub | respaldo remoto de versiones | Hanssen | **cerrado 30-oct**: remoto `origin` = github.com/potencIAEmpresarIAl/agentes-rca, rama `main`, push hecho con las credenciales del llavero de macOS. El repositorio es PÚBLICO: contiene la URL del servidor n8n y nombres del equipo de RCA. Recomendación: pasarlo a privado en Settings (lo decide Hanssen) |
 | P10 | Correo de la persona de Impulso que implementa, para crear su usuario miembro en n8n | acceso al servidor | Impulso | abierto desde el 1-oct |
 | P11 | Formato único de `Fecha compromiso` (AAAA-MM-DD como texto en la hoja de prueba) | la lectura ISO falla con otros formatos | Hanssen / RCA | abierto |
 | P12 | Confirmar compatibilidad de los typeVersion con n8n 2.41.5 al importar | podría pedir actualizar nodos | Hanssen al importar / MCP | abierto |
