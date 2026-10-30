@@ -30,3 +30,6 @@ fuentes: []
 ## [2026-10-30] construccion | Sheet de prueba creado y conectado
 - Creado «RCA · Entregables · PRUEBA (datos ficticios)» en el Drive de gerencia@ con el conector de Google Drive, a partir del CSV ficticio. ID puesto en el nodo «Leer tabla de entregables»; validador local sin errores; queda 1 marcador PENDIENTE (correo de Roger).
 - Por verificar al abrirlo: nombre de la pestaña `Entregables` y fechas en formato AAAA-MM-DD.
+
+## [2026-10-30] decision | Regla de trabajo: describir en texto antes de crear un flujo
+- Hanssen pide que todo flujo nuevo o cambio se explique primero en texto y se apruebe antes de escribir el JSON. Registrada en AGENTS.md §6. Aplica desde ahora al flujo de registro (P7) y a los avisos a líderes y gerencia (P6).

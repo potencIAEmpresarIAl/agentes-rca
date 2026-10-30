@@ -36,6 +36,7 @@ Reglas estables para cualquier conversación en esta carpeta. El detalle vive en
 - La wiki no guarda secretos, datos personales de clientes de RCA ni registros reales. Registra el servicio y el estado de la credencial, nunca su valor.
 
 ## 6. Reglas de construcción (alcance del programa)
+- **Antes de crear o modificar un flujo, describirlo en texto y esperar el OK de Hanssen** (regla de Hanssen, 2026-10-30): objetivo, qué lo dispara, pasos en orden, regla de decisión, salida, efectos reales y qué queda pendiente. Sin ese OK no se escribe el JSON. Las preguntas para entender el proceso van antes, máximo cinco por turno.
 - Alcance vigente: control de entregables por cliente = una entrada, una tabla, cuatro estados como máximo, una regla de asignación, recordatorio diario. Sin pagos, inventario, facturación, ERP ni sistemas críticos. Sin landing adicional.
 - WhatsApp excluido como canal automático (recepción, aviso o respuesta). Sin bots de WhatsApp ni campañas masivas.
 - Flujo más sencillo con nodos nativos. Código o IA solo si aportan algo necesario.
