@@ -1,0 +1,18 @@
+---
+tipo: log
+estado: vigente
+creado: 2026-10-30
+actualizado: 2026-10-30
+tags: [log]
+fuentes: []
+---
+# Log (solo se añade al final)
+
+## [2026-10-30] inicio | Base del agente y primer flujo en borrador
+- Carpeta `~/Agentes Impulso` encontrada vacía. Herramientas: git 2.50.1, node 24.16, npm 11.13; `gh` no instalado; identidad Git global presente.
+- Contexto recuperado de las fuentes de Potencia (no de esta carpeta): RCA Consultores en Impulso Empresarial, servidor n8n 2.41.5 publicado el 1-oct, proceso redirigido al control de entregables el 15-oct, plantilla Excel de 15 columnas.
+- Creados: `AGENTS.md`, `Docs/LEEME.md`, `.gitignore`, wiki de 9 páginas, `workflows/RCA-Entregables-Recordatorio-diario.json` (9 nodos, 7 conexiones, correo deshabilitado, 3 marcadores PENDIENTE), `workflows/LEEME-importacion.md`, `pruebas/entregables-ficticios.csv`, `pruebas/casos-de-prueba.md`, `pruebas/validar_workflow.js`, `pruebas/simular_regla.js`.
+- Verificación: validador local sin errores; simulador local reproduce los 8 casos (6 avisos con umbral 5, 7 con umbral 10). Nada ejecutado en n8n (sin MCP, sin importación aún).
+- Versiones de nodos verificadas contra el código fuente oficial (rama master) el mismo día.
+- Integrado el patrón LLM Wiki de Karpathy (texto aportado por el instructor) en AGENTS.md §5.
+- Abiertos P1 a P13 en [[pendientes]].

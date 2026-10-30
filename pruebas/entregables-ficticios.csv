@@ -1,0 +1,9 @@
+ID,Cliente,NIT,Servicio,Tipo de entregable,Periodicidad,Periodo,Fecha compromiso,Responsable (líder),Coordinador,Estado,Fecha real de entrega,Evidencia (enlace OneDrive),Observaciones
+RCA-2026-0001,Cliente Ficticio Uno,900000001,Outsourcing contable,Informe financiero mensual,Mensual,Septiembre 2026,2026-10-25,Líder contable A,Andrea,En elaboración,,,Falta extracto bancario del cliente
+RCA-2026-0002,Cliente Ficticio Dos,900000002,Revisoría fiscal,Informe de gestión,Trimestral,T3 2026,2026-11-03,Líder auditoría B,Andrea,Pendiente,,,
+RCA-2026-0003,Cliente Ficticio Tres,900000003,Asesoría tributaria,Acta de reunión,Única,Octubre 2026,2026-10-28,Líder tributario C,Andrea,Entregado,2026-10-27,https://ejemplo.invalido/acta,Entregado a tiempo
+RCA-2026-0004,Cliente Ficticio Cuatro,900000004,Nómina,Nómina y seguridad social,Mensual,Noviembre 2026,2026-11-07,Líder nómina D,Andrea,Pendiente,,,
+RCA-2026-0005,Cliente Ficticio Cinco,900000005,Auditoría,Informe de auditoría,Anual,2026,,Líder auditoría B,Andrea,Pendiente,,,Sin fecha compromiso registrada
+RCA-2026-0006,Cliente Ficticio Seis,900000006,Asesoría financiera,Estados financieros,Semestral,S2 2026,30/11/2026,Líder financiero E,Andrea,Pendiente,,,Fecha escrita en otro formato
+RCA-2026-0007,Cliente Ficticio Siete,900000007,Outsourcing contable,Declaración tributaria,Bimestral,Sep-Oct 2026,2026-10-30,Líder contable A,Andrea,En elaboración,,,Vence hoy
+RCA-2026-0001,Cliente Ficticio Uno (fila repetida),900000001,Outsourcing contable,Informe financiero mensual,Mensual,Septiembre 2026,2026-10-25,Líder contable A,Andrea,Pendiente,,,Mismo ID que la fila 1: caso de evento repetido
