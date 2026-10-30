@@ -16,3 +16,9 @@ fuentes: []
 - Versiones de nodos verificadas contra el código fuente oficial (rama master) el mismo día.
 - Integrado el patrón LLM Wiki de Karpathy (texto aportado por el instructor) en AGENTS.md §5.
 - Abiertos P1 a P13 en [[pendientes]].
+
+## [2026-10-30] decision | Hanssen responde P1 a P5 en la sesión de Impulso
+- Confirmado: empresa RCA Consultores y control de entregables (P1); el resumen lo recibe Roger y sale del correo de Potencia por SMTP (P2); Sheet ficticio para pruebas (P3); todos los días 7:00 (P4); pendiente = todo lo que no sea Entregado (P5).
+- Flujo actualizado: nodo «Enviar al gerente», remitente gerencia@potenciaempresarial.site, saludo a Roger. Validador local sin errores; 2 marcadores PENDIENTE (ID del Sheet, correo de Roger).
+- Nuevos pendientes P14 (credencial SMTP en n8n), P15 (correo de Roger en el nodo), P16 (tabla definitiva). Guía de credencial en `workflows/LEEME-importacion.md` §3b.
+- Sigue sin importar ni ejecutar en n8n.

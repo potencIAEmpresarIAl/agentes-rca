@@ -16,7 +16,7 @@ Cómo se verificó: **solo localmente** con `node pruebas/simular_regla.js 2026-
 | 9 | Sin pendientes | tabla con todo Entregado o al día | el filtro no deja pasar nada; Agrupar y Redactar no se ejecutan; no hay correo | por probar en n8n | pendiente |
 | 10 | Fallo de conexión (Sheets o SMTP caído) | credencial inválida o sin red | el nodo falla y la ejecución queda en error visible; no reintenta solo; nadie recibe correo parcial | por probar en n8n | pendiente. Decisión sugerida: `Retry on fail` máximo 2 veces en Leer tabla; en correo NO reintentar a ciegas |
 
-Correo esperado con umbral 5 (hoy 2026-10-30): UN correo con 6 casos (0001, 0002, 0005, 0006, 0007 y el 0001 repetido). Con umbral 10: 7 casos (se suma 0004).
+Destinatario: Roger (en la primera prueba, Hanssen). Correo esperado con umbral 5 (hoy 2026-10-30): UN correo con 6 casos (0001, 0002, 0005, 0006, 0007 y el 0001 repetido). Con umbral 10: 7 casos (se suma 0004).
 
 ## Micropráctica propuesta
 Abrir el nodo «Calcular alerta», cambiar el `5` por `10` en las dos expresiones y predecir qué fila nueva aparece en el correo antes de ejecutar. Respuesta esperada: RCA-2026-0004. Comprobación local: `node pruebas/simular_regla.js 2026-10-30 10`.

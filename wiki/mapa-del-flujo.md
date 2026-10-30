@@ -19,7 +19,7 @@ Fila `RCA-2026-0002 · Cliente Ficticio Dos · Pendiente · 2026-11-03`, hoy 202
 5. «¿Requiere aviso?» la deja pasar (otras filas se descartan).
 6. «Agrupar en un resumen» junta todas las que pasaron en una sola lista `data`.
 7. «Redactar correo» arma asunto y cuerpo con una línea por caso.
-8. «Enviar a la coordinadora» (deshabilitado en el borrador) enviaría el correo.
+8. «Enviar al gerente» (deshabilitado en el borrador) enviaría el correo a Roger desde gerencia@potenciaempresarial.site.
 
 ## Nodo por nodo
 | # | Nodo | Tipo · typeVersion | Qué resuelve | Recibe → entrega | Cómo comprobarlo · error habitual |
@@ -30,8 +30,8 @@ Fila `RCA-2026-0002 · Cliente Ficticio Dos · Pendiente · 2026-11-03`, hoy 202
 | 4 | Calcular alerta | `set` 3.4, conserva otros campos | aplicar LA REGLA del negocio en un solo lugar | `fecha_valida, dias_para_vencer, estado` → `clasificacion, requiere_aviso` | el 5 de la regla está aquí dos veces (clasificación y aviso). Micropráctica: cambiarlo por 10 |
 | 5 | ¿Requiere aviso? | `filter` 2.2 | dejar pasar solo lo que sigue pendiente y urge | `requiere_aviso` → mismos items filtrados | con los datos ficticios pasan 6 de 8. Error: si no pasa nada, el resto del flujo no se ejecuta (es lo deseado) |
 | 6 | Agrupar en un resumen | `aggregate` 1, todos los datos | un solo correo, no uno por fila | n items → 1 item con `data[]` | `data.length` = 6 |
-| 7 | Redactar correo | `set` 3.4 | texto legible para la coordinadora | `data[]` → `asunto, cuerpo, total` | el cuerpo tiene una línea por caso con «·» y «|» |
-| 8 | Enviar a la coordinadora | `emailSend` 2.1 (SMTP), **deshabilitado** | que el aviso llegue | `asunto, cuerpo` → correo | habilitar solo con destinatario de prueba. Error: sin credencial SMTP (el servidor no tiene correo) |
+| 7 | Redactar correo | `set` 3.4 | texto legible para el gerente | `data[]` → `asunto, cuerpo, total` | el cuerpo tiene una línea por caso con «·» y «|» |
+| 8 | Enviar al gerente | `emailSend` 2.1 (SMTP), **deshabilitado** | que el aviso llegue a Roger | `asunto, cuerpo` → correo desde el correo de Potencia | habilitar solo con destinatario de prueba (Hanssen) la primera vez. Errores: credencial SMTP sin contraseña de aplicación, puerto distinto de 587, correo de Roger sin poner (PENDIENTE) |
 | 9 | Nota | `stickyNote` 1 | instrucciones dentro del editor | | |
 
 ## Expresiones usadas (escritas, no hay que memorizarlas)
@@ -59,4 +59,4 @@ Fila `RCA-2026-0002 · Cliente Ficticio Dos · Pendiente · 2026-11-03`, hoy 202
 - Sin AI Agent ni nodo Code: la regla cabe en expresiones de Edit Fields.
 - Dos nodos Set en vez de uno: separa «poner nombres» de «aplicar la regla», para que cambiar la regla sea tocar un solo nodo.
 - Filter en vez de IF: no necesitamos la rama «falso».
-- SMTP (`emailSend`) en vez de Gmail: RCA usa Microsoft y el servidor no tiene correo propio ([[empresa]]).
+- SMTP (`emailSend`) en vez de Gmail: el servidor no tiene correo propio y Hanssen decidió usar la cuenta de Potencia por ahora ([[decisiones]] D6). Mismo método que ya usa la app de Potencia (smtp.gmail.com, puerto 587).

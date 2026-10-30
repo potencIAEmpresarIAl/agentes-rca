@@ -20,13 +20,21 @@ Estado: borrador validado solo localmente (`node pruebas/validar_workflow.js`). 
 |---|---|---|
 | Leer tabla de entregables | Credential | credencial de Google Sheets (OAuth2 o cuenta de servicio) guardada en Credenciales con prefijo `RCA ·` |
 | Leer tabla de entregables | Document ID | el ID del Sheet de prueba |
-| Enviar a la coordinadora | Credential | credencial SMTP `RCA · Correo de salida` (cuenta por definir, pendiente P2) |
-| Enviar a la coordinadora | From / To | correo de salida y correo de la coordinadora (en prueba: el correo de Hanssen) |
+| Enviar al gerente | Credential | credencial SMTP `RCA · Correo de salida (Potencia)`: cuenta gerencia@potenciaempresarial.site, decidido el 30-oct |
+| Enviar al gerente | To | correo de Roger. En la primera prueba poner el correo de Hanssen y solo después el de Roger |
+
+## 3b. Crear la credencial SMTP (una sola vez, en n8n)
+Decisión del 30-oct: se envía desde el correo de Potencia. Es el mismo método que ya usa la app de Potencia.
+1. En n8n: `Credentials` > `Add credential` > buscar `SMTP`.
+2. Nombre: `RCA · Correo de salida (Potencia)`.
+3. User: `gerencia@potenciaempresarial.site` · Host: `smtp.gmail.com` · Port: `587` · SSL/TLS: desactivado (usa STARTTLS).
+4. Password: una **contraseña de aplicación** de Google (cuenta de Google > Seguridad > Verificación en dos pasos > Contraseñas de aplicaciones). Se genera allí y se pega solo en n8n. No la escriba en el chat ni en archivos.
+5. Guardar y, en el nodo «Enviar al gerente», elegir esa credencial. El campo `To` lleva el correo de Roger; en la primera prueba, el de Hanssen.
 
 ## 4. Probar sin efectos reales
 1. Con el nodo de correo DESHABILITADO, pulsar `Execute workflow` (ejecución manual).
 2. Abrir cada nodo y comparar con `pruebas/casos-de-prueba.md`: la salida de `Redactar correo` debe traer `total` = cantidad esperada y el `cuerpo` con los ID listados.
-3. Solo cuando el cuerpo sea correcto y el destinatario sea de prueba: habilitar el nodo de correo, ejecutar manualmente UNA vez, verificar el correo recibido. Luego volver a deshabilitar o dejar activo según autorización.
+3. Solo cuando el cuerpo sea correcto y el destinatario sea de prueba: habilitar «Enviar al gerente», ejecutar manualmente UNA vez, verificar el correo recibido. Luego volver a deshabilitar o dejar activo según autorización.
 
 ## 5. Qué NO hace todavía
 - No escribe en la tabla (no marca «aviso enviado»): si se ejecuta dos veces el mismo día, envía dos correos iguales.
