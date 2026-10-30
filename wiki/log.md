@@ -33,3 +33,6 @@ fuentes: []
 
 ## [2026-10-30] decision | Regla de trabajo: describir en texto antes de crear un flujo
 - Hanssen pide que todo flujo nuevo o cambio se explique primero en texto y se apruebe antes de escribir el JSON. Registrada en AGENTS.md §6. Aplica desde ahora al flujo de registro (P7) y a los avisos a líderes y gerencia (P6).
+
+## [2026-10-30] ingesta | Mensaje al comité de innovación RCA (contadores)
+- Redactado el mensaje con las 5 preguntas de estandarización para los contadores, a responder por texto o audio en el grupo. Guardado en `Laboratorio/RCA Consultores/sesiones/2026-10-30-impulso/mensaje-grupo-comite-contadores-2026-10-30.txt`. Envío manual por Hanssen (WhatsApp no es canal automático del programa). Las respuestas se ingestan en [[proceso]] y cierran P7, P11 y parte de P6.
