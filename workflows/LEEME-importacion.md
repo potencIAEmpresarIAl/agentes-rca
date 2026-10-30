@@ -3,12 +3,11 @@
 Flujo: `RCA-Entregables-Recordatorio-diario.json` · nombre en n8n: `RCA · Entregables · Recordatorio diario (BORRADOR)`.
 Estado: borrador validado solo localmente (`node pruebas/validar_workflow.js`). No ha sido importado ni ejecutado en n8n todavía.
 
-## 1. Preparar la tabla de prueba (datos ficticios)
-1. Crear un Google Sheet nuevo llamado `RCA · Entregables · PRUEBA`.
-2. Renombrar la primera pestaña a `Entregables`.
-3. Importar `pruebas/entregables-ficticios.csv` (Archivo > Importar > Reemplazar hoja actual). La fila 1 debe quedar como encabezados.
-4. Dejar la columna `Fecha compromiso` como texto `AAAA-MM-DD` (formato > número > texto sin formato). Si Google la convierte a fecha, el flujo la leerá como texto formateado y puede fallar la lectura ISO. Esta estandarización es un pendiente registrado.
-5. Copiar el ID del Sheet: es la parte de la URL entre `/d/` y `/edit`.
+## 1. Tabla de prueba (datos ficticios): YA CREADA el 30-oct
+El agente la creó en el Drive de gerencia@ desde `pruebas/entregables-ficticios.csv`: «RCA · Entregables · PRUEBA (datos ficticios)», ID `1EI5DnWpeHMLqtXCWkc_p8rd-Q23I-kcb0fg9kXkIDww`. El ID ya está puesto en el nodo «Leer tabla de entregables».
+Solo revisar dos cosas al abrirla:
+1. Que la pestaña se llame `Entregables` (el nodo la busca por ese nombre). Si Google le puso otro nombre, renombrarla.
+2. Que la columna `Fecha compromiso` muestre `2026-10-25` y no `25/10/2026`. Si Google la convirtió, seleccionar la columna > Formato > Número > Texto sin formato y volver a escribir las fechas como AAAA-MM-DD. n8n lee lo que se muestra en la celda.
 
 ## 2. Importar en n8n
 1. Entrar a https://n8n-rca.potenciaempresarial.site con el usuario propio (rol miembro).
@@ -19,7 +18,6 @@ Estado: borrador validado solo localmente (`node pruebas/validar_workflow.js`). 
 | Nodo | Campo | Qué poner |
 |---|---|---|
 | Leer tabla de entregables | Credential | credencial de Google Sheets (OAuth2 o cuenta de servicio) guardada en Credenciales con prefijo `RCA ·` |
-| Leer tabla de entregables | Document ID | el ID del Sheet de prueba |
 | Enviar al gerente | Credential | credencial SMTP `RCA · Correo de salida (Potencia)`: cuenta gerencia@potenciaempresarial.site, decidido el 30-oct |
 | Enviar al gerente | To | correo de Roger. En la primera prueba poner el correo de Hanssen y solo después el de Roger |
 

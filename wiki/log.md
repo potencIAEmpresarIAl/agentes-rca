@@ -26,3 +26,7 @@ fuentes: []
 ## [2026-10-30] construccion | Repositorio conectado a GitHub
 - Remoto `origin` añadido (potencIAEmpresarIAl/agentes-rca), rama renombrada a `main`, 2 commits subidos. Autenticación por el llavero de macOS (osxkeychain), sin tokens en el chat.
 - `Docs/` sigue fuera del repositorio. El repo es público: recomendado pasarlo a privado por la URL del servidor n8n y los nombres del equipo.
+
+## [2026-10-30] construccion | Sheet de prueba creado y conectado
+- Creado «RCA · Entregables · PRUEBA (datos ficticios)» en el Drive de gerencia@ con el conector de Google Drive, a partir del CSV ficticio. ID puesto en el nodo «Leer tabla de entregables»; validador local sin errores; queda 1 marcador PENDIENTE (correo de Roger).
+- Por verificar al abrirlo: nombre de la pestaña `Entregables` y fechas en formato AAAA-MM-DD.

@@ -20,6 +20,7 @@ fuentes: [inventario-2026-10-30]
 | `Laboratorio/RCA Consultores/plan/ACTA-SESION-IMPULSO-2026-10-02.md` | proceso / acta | acta de la sesión Impulso + RCA | dolor principal: control operativo interno; ecosistema Microsoft; piloto con datos ficticios | 5-oct-2026 | contexto del proceso | leída vía memoria de Potencia, no el archivo completo |
 | `Laboratorio/RCA Consultores/sesiones/2026-10-22-impulso/` | mensajes | textos de mensajes al comité de innovación RCA | levantamiento de información | 22-oct-2026 | contexto; no afecta el flujo | sin leer (2 .txt) |
 | `Laboratorio/RCA Consultores/insumos/diagnostico-impulso-empresarial-2026-09-16.pdf` | información empresarial | diagnóstico del programa | recomendación inicial: reportes y alertas | 16-sep-2026 | antecedente de [[decisiones]] | sin leer (conocido por memoria) |
+| Google Sheet «RCA · Entregables · PRUEBA (datos ficticios)», Drive de gerencia@, ID `1EI5DnWpeHMLqtXCWkc_p8rd-Q23I-kcb0fg9kXkIDww` | tabla de datos (ficticia, en línea) | copia en Sheets del CSV de pruebas, creada por el agente el 30-oct con el conector de Drive | 8 filas; leída por el nodo «Leer tabla de entregables» | 2026-10-30 | tabla de prueba del flujo 1 (decisión D3) | verificar nombre de pestaña y formato de fechas al abrirla |
 | `pruebas/entregables-ficticios.csv` | tabla de datos (ficticia) | 8 filas de prueba derivadas de la plantilla | cubre los casos de [[mapa-del-flujo]] | 2026-10-30 | pruebas | no |
 
 ## Relación copia ↔ original

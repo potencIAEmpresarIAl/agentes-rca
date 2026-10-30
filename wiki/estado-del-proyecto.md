@@ -19,8 +19,8 @@ fuentes: [conversacion-2026-10-30, Laboratorio/RCA Consultores/n8n/N8N-RCA-GUIA-
 | Empresa y proceso identificados | RCA Consultores · control de entregables por cliente | confirmado por Hanssen (30-oct) |
 | Servidor n8n | https://n8n-rca.potenciaempresarial.site · n8n 2.41.5 · America/Bogota | confirmado (guía 1-oct) |
 | Usuario de n8n para quien implementa | sin crear: falta el correo | pendiente P2 |
-| Tabla de datos | Google Sheet con datos ficticios para pruebas (aprobado); destino definitivo sin decidir | pendiente P16 |
-| Flujo 1 · Recordatorio diario | borrador JSON listo para importar; destinatario Roger, remitente Potencia, todos los días 7:00; 2 campos PENDIENTE (ID del Sheet, correo de Roger) | validado localmente |
+| Tabla de datos | Google Sheet de prueba creado en el Drive de gerencia@ y conectado al flujo (30-oct); destino definitivo sin decidir | hecho (prueba) · pendiente P16 (definitiva) |
+| Flujo 1 · Recordatorio diario | borrador JSON listo para importar; destinatario Roger, remitente Potencia, todos los días 7:00; 1 campo PENDIENTE (correo de Roger) | validado localmente |
 | Correo de salida | cuenta de Potencia por SMTP (decidido); credencial por crear en n8n | pendiente P14 |
 | Flujo de registro (entrada) | no construido; depende de P3 | pendiente P7 |
 | Git | repo local inicializado, 1 commit | hecho |
@@ -28,7 +28,7 @@ fuentes: [conversacion-2026-10-30, Laboratorio/RCA Consultores/n8n/N8N-RCA-GUIA-
 | MCP a n8n | no disponible en esta sesión | siguiente sesión |
 
 ## Qué sigue (orden sugerido)
-1. Hanssen crea el Sheet de prueba y la credencial SMTP (P14) en n8n.
+1. Hanssen crea en n8n la credencial de Google Sheets y la credencial SMTP (P14).
 2. Importar la copia de prueba por la interfaz de n8n siguiendo `workflows/LEEME-importacion.md`; registrar la evidencia en `pruebas/casos-de-prueba.md`.
 3. Con MCP (siguiente sesión): checklist abajo.
 4. Definir dónde vive la tabla y construir el flujo de registro con ID único.
